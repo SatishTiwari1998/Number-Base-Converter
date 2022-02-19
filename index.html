@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div id="logo-box">
+        <i class="fa fa-balance-scale fa-3x" aria-hidden="true"></i>
+      </div>
+      <div id="project-title" >Base Converter</div>
+      <div id="header-list">
+        <ul>
+          <li>Home <span class="header-icons"><i class="fa fa-home" aria-hidden="true"></i></span></li>
+          <li>FAQs <span  class="header-icons"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+          <li>How to Use <span class="header-icons"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></i></li>
+          <li>Info <span class="header-icons"><i class="fa fa-info" aria-hidden="true"></i></span></li>
+        </ul>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Easy & Simple Converter</h1>
+      <div class="input-field">
+        <div class="inputs">
+          <input type="text" placeholder="Enter your Number Here" id="input-value"/>
+          <label for="">From</label>
+          <select name="" id="from-select" class="select">
+            <option value="Binary" >Binary</option>
+            <option value="Decimal" selected>Decimal</option>
+            <option value="Hexadecimal">Hexadecimal</option>
+            <option value="Octal">Octal</option>
+          </select>
+          <label for="">To</label>
+          <select name="" id="to-select" class="select">
+            <option value="Binary" selected>Binary</option>
+            <option value="Decimal">Decimal</option>
+            <option value="Hexadecimal">Hexadecimal</option>
+            <option value="Octal">Octal</option>
+          </select>
+        </div>
+        <div class="btns">
+          <button  id="convert-btn">Convert <span class="icons"><i class="fa fa-refresh" aria-hidden="true"></i></span></button>
+          <button id="reset-btn">Reset <span class="icons"><i class="fa fa-reply" aria-hidden="true"></i></span></button>
+          <button id="swap-btn">Swap <span class="icons"><i class="fa fa-exchange" aria-hidden="true"></i></span></button>
+        </div>
+      </div>
+      <div id="answer">
+        <h1 id="convert-status">The converted number is:</h1>
+          <h1 id="output-value"><i class="fa fa-spinner fa-pulse" aria-hidden="true"></i>Loading...</h1>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
