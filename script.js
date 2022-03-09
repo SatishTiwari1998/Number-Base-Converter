@@ -40,8 +40,7 @@ swapBtn.addEventListener('click', () => {
 
     fromArray.filter((item, index) => {
         if (item) {
-            toSelector.options[index].selected = true;
-        }
+            toSelector.options[index].selected = true;   // in to array 
     })
     toArray.filter((item, index) => {
         if (item) {
@@ -137,7 +136,7 @@ convertBtn.addEventListener('click', () => {
         else if (fromSelector.value === "Binary" && toSelector.value === "Octal") {
             if(/^[01]+$/.test(inputValue.value)===true)
             {
-                const dec = parseInt(val, 2); // converting binary to Octal
+                const dec = parseInt(val, 2); 
                 outputValue.innerText = parseInt(dec).toString(8);
                 conversionCount++;
             }
